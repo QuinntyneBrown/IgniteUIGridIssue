@@ -1,39 +1,11 @@
 <mat-toolbar color="primary" class="mat-elevation-z6">
-  <button mat-icon-button (click)="toggle()">
-    <mat-icon>menu</mat-icon>
-  </button>
-
   <section class="mat-typography">
     <h1>Ignite UI Grid Issue</h1>
   </section>
 
-  <section class="dashboard-menu-items-container">
-    <button mat-icon-button (click)="handleDashboardSettingsClick()">
-      <mat-icon>settings</mat-icon>
-    </button>
-  </section>
-
-  <section class="mat-typography current-username">
-    {{currentUsername}}
-  </section>
-  <button mat-icon-button>
-    <mat-icon>more_horiz</mat-icon>
-  </button>
 </mat-toolbar>
 <mat-drawer-container class="app-content-container" autosize>
   <mat-drawer #drawer class="sidenav" opened="{{ opened }}" mode="side">
-
-    <mat-accordion>
-      <mat-expansion-panel>
-        <mat-expansion-panel-header>
-          <mat-panel-title>
-            Links
-          </mat-panel-title>
-        </mat-expansion-panel-header>
-        <button mat-button [routerLink]="['/']">Home</button>
-      </mat-expansion-panel>
-      <button mat-button [routerLink]="['/users/login']"> Log out</button>
-    </mat-accordion>
   </mat-drawer>
 
   <div class="router-outlet-container">

@@ -8,12 +8,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { CoreModule } from './core/core.module';
 import { SharedModule } from './shared/shared.module';
 import { RegionsPageComponent } from './regions/regions-page.component';
+import { StandAloneRegionsPageComponent } from './regions/stand-alone-regions-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MasterPageComponent,
-    RegionsPageComponent
+    RegionsPageComponent,
+    StandAloneRegionsPageComponent
   ],
   imports: [
     BrowserModule,

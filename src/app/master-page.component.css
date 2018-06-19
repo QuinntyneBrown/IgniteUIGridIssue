@@ -4,13 +4,6 @@
   display: block;
 }
 
-mat-toolbar {
-  display: grid;
-  grid-template-columns: min-content min-content 1fr min-content min-content;
-  position: relative;
-  z-index: 2;
-}
-
 h1 {
   padding: 0 20px;
 }
@@ -35,15 +28,6 @@ mat-drawer-container, .router-outlet-container {
   background-color: var(--default-color, rgb(245, 245, 245));
 }
 
-.current-username {
-  padding: 0px 20px;
-  cursor: pointer;
-}
-
-button.current {
-  font-weight: 600;
-}
-
 .router-outlet-container {
   display: block;
   padding: 20px;
@@ -52,22 +36,6 @@ button.current {
   width: calc(100% - 40px);
 }
 
-mat-drawer button {
-  width: 100%;
-}
-
-mat-drawer button[mat-button].mat-button:hover .mat-button-focus-overlay {
-  background-color: #fff;
-}
-
 mat-drawer {
   padding-top: 10px;
-}
-
-.app-content-container .mat-button {
-  text-align: left;
-}
-
-.sidenav {
-  width: 200px;
 }

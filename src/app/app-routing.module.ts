@@ -2,6 +2,7 @@ import { Routes, RouterModule, RouteReuseStrategy, DetachedRouteHandle, Activate
 import { MasterPageComponent } from './master-page.component';
 import { NgModule } from '@angular/core';
 import { RegionsPageComponent } from './regions/regions-page.component';
+import { StandAloneRegionsPageComponent } from './regions/stand-alone-regions-page.component';
 
 
 export const ROUTES: Routes = [
@@ -17,6 +18,10 @@ export const ROUTES: Routes = [
     canActivate: [
 
     ]
+  },
+  {
+    path: 'regions',
+    component: StandAloneRegionsPageComponent,
   },
 ];
 

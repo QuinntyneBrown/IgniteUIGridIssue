@@ -1,0 +1,16 @@
+:root {
+  --primary-color: #3f51b5;
+  --secondary-color: #3f51b5;
+  --default-color: rgb(245, 245, 245);
+}
+
+.content p {
+  margin: 15px;
+}
+
+html, body {
+  margin:0;
+  padding:0;
+  height: 100%;
+  width: 100%;
+}
